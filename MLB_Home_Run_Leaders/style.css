@@ -1,0 +1,50 @@
+svg {
+    font-family: "Open Sans", sans-serif;
+}
+
+#main {
+    margin: 10px 20px;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-size: 12px;
+}
+
+.x.label,
+.y.label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.graph.title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.player circle {
+    opacity: 0.6; 
+    transition: opacity 0.3s; 
+}
+
+.player text {
+    visibility: hidden !important;
+    font-size: 10px;
+    fill: #333; 
+    pointer-events: none; 
+}
+
+
+.player:hover text {
+    visibility: visible !important; 
+}
+
+.player:hover circle {
+    opacity: 1; 
+}
